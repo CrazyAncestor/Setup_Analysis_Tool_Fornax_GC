@@ -1,0 +1,1720 @@
+LoadData_HDF5 ...
+   Loading simulation information ...
+      The format version of the HDF5 RESTART file = 2405
+   Loading simulation information ... done
+   Loading corner table ...
+   Loading corner table ... done
+   Loading son table ...
+   Loading son table ... done
+   Loading patches ...
+        0.0% completed ...
+       10.0% completed ...
+       20.0% completed ...
+       30.0% completed ...
+       39.9% completed ...
+       49.9% completed ...
+       59.9% completed ...
+       69.9% completed ...
+       79.9% completed ...
+       89.9% completed ...
+       99.9% completed ...
+
+      Lv  0:       4096 patches loaded)
+      Lv  1:        768 patches loaded)
+      Lv  2:        896 patches loaded)
+      Lv  3:         96 patches loaded)
+      Lv  4:         64 patches loaded)
+      Lv  5:          0 patches loaded)
+      Lv  6:          0 patches loaded)
+      Lv  7:          0 patches loaded)
+      Lv  8:          0 patches loaded)
+      Lv  9:          0 patches loaded)
+
+   Loading patches ... done
+   GetMinShellWidth ...
+      Minimum distance = 1.1085125e+02
+      Level            = 2
+      Shell scale      = 1.2800000e+02
+   GetMinShellWidth ... done
+LoadData_HDF5 ... done
+SetMaxRhoPos ...
+   GOOD : No high density points (> 7.6203226e+02) were found outside the target region
+   ===================================================================================
+   Maximum density:
+   Ranking  Lv  (            x,             y,             z)        Density
+         0   2  (9.9804688e+00, 1.0019531e+01, 9.9804688e+00)  8.4118048e+02
+         1   2  (9.9804688e+00, 1.0019531e+01, 1.0019531e+01)  8.2514792e+02
+         2   2  (1.0019531e+01, 1.0019531e+01, 1.0019531e+01)  7.8294884e+02
+         3   2  (1.0019531e+01, 9.9804688e+00, 9.9804688e+00)  7.8261347e+02
+         4   2  (1.0019531e+01, 9.9804688e+00, 1.0019531e+01)  7.7569697e+02
+         5   2  (9.9804688e+00, 9.9804688e+00, 1.0019531e+01)  7.7029410e+02
+         6   2  (1.0019531e+01, 1.0019531e+01, 9.9804688e+00)  7.6269128e+02
+         7   2  (1.0019531e+01, 9.9414062e+00, 9.9804688e+00)  7.6203226e+02
+
+   New center: (1.0004429e+01, 9.9956530e+00, 1.0000017e+01)
+   ===================================================================================
+LoadData_HDF5 ...
+   Loading simulation information ...
+      The format version of the HDF5 RESTART file = 2405
+   Loading simulation information ... done
+   Loading corner table ...
+   Loading corner table ... done
+   Loading son table ...
+   Loading son table ... done
+   Loading patches ...
+        0.0% completed ...
+       10.0% completed ...
+       20.0% completed ...
+       30.0% completed ...
+       39.9% completed ...
+       49.9% completed ...
+       59.9% completed ...
+       69.9% completed ...
+       79.9% completed ...
+       89.9% completed ...
+       99.9% completed ...
+
+      Lv  0:       4096 patches loaded)
+      Lv  1:        768 patches loaded)
+      Lv  2:        896 patches loaded)
+      Lv  3:         96 patches loaded)
+      Lv  4:         64 patches loaded)
+      Lv  5:          0 patches loaded)
+      Lv  6:          0 patches loaded)
+      Lv  7:          0 patches loaded)
+      Lv  8:          0 patches loaded)
+      Lv  9:          0 patches loaded)
+
+   Loading patches ... done
+   GetMinShellWidth ...
+      Minimum distance = 9.4938030e+01
+      Level            = 2
+      Shell scale      = 1.2800000e+02
+   GetMinShellWidth ... done
+LoadData_HDF5 ... done
+SetMaxRhoPos ... done
+TakeNote ... 
+======================================================================================
+
+Command-line arguments :
+ ./GAMER_ExtractProfile -D -i Data_f -S -r 2.9 -n 128 -x 10 -y 10 -z 10 -p
+
+MODEL            =          ELBDM
+FLOAT8           =             ON
+GAMER_DEBUG      =            OFF
+SUPPORT_HDF5     =             ON
+NCOMP_FLUID      =              3
+NCOMP_PASSIVE    =              0
+DumpID           =              0
+Time             =  0.0000000e+00
+Step             =              0
+NX0_TOT[0]       =            128
+NX0_TOT[1]       =            128
+NX0_TOT[2]       =            128
+NIn              =              4
+NOut             =              4
+Center_x         =  1.0004429e+01
+Center_y         =  9.9956530e+00
+Center_z         =  1.0000017e+01
+MappedCenter_x   = -9.9955705e+00
+MappedCenter_y   =  2.9995653e+01
+MappedCenter_z   = -9.9999827e+00
+Radius           =  2.9000000e+00
+UseMaxRhoPos     =              8
+UseMaxRhoPos_R   =  2.9000000e+00
+UseMaxRhoPos_Par =              1
+Periodic         =              1
+InputScale       =              0
+LogBin           =  0.0000000e+00
+GetNShell        =  2.0000000e+00
+NShell           =             38
+ShellWidth       =  7.8125000e-02
+RhoThres         = -9.9999900e+05
+OutputPot        =  NO
+OutputParDens    =  1
+OutputCenter     =  NO
+NeedGhost        =  NO
+UseTree          =  NO
+FileName_Tree    =  (null)
+IntScheme        =  CQUAR
+ELBDM_IntPhase   =  YES
+ELBDM_GetVir     =  NO
+ELBDM_ETA        =  8.7605914e+03
+INT_MONO_COEFF   =  2.0000000e+00
+GetAvePot        =  NO
+======================================================================================
+TakeNote ... done
+CheckParameter ... done
+Init_ShellAve ... done
+Evaluating the shell average ...
+   Level 0 ... done
+   Level 1 ... done
+   Level 2 ... done
+   Level 3 ... done
+   Level 4 ... done
+   Level 5 ... done
+   Level 6 ... done
+   Level 7 ... done
+   Level 8 ... done
+   Level 9 ... done
+Evaluating the RMS ...
+   Level 0 ... done
+   Level 1 ... done
+   Level 2 ... done
+   Level 3 ... done
+   Level 4 ... done
+   Level 5 ... done
+   Level 6 ... done
+   Level 7 ... done
+   Level 8 ... done
+   Level 9 ... done
+Output_ShellAve ... done
+Program terminated successfully
+LoadData_HDF5 ...
+   Loading simulation information ...
+      The format version of the HDF5 RESTART file = 2405
+   Loading simulation information ... done
+   Loading corner table ...
+   Loading corner table ... done
+   Loading son table ...
+   Loading son table ... done
+   Loading patches ...
+        0.0% completed ...
+       10.0% completed ...
+       20.0% completed ...
+       30.0% completed ...
+       39.9% completed ...
+       49.9% completed ...
+       59.9% completed ...
+       69.9% completed ...
+       79.9% completed ...
+       89.9% completed ...
+       99.9% completed ...
+
+      Lv  0:       4096 patches loaded)
+      Lv  1:        672 patches loaded)
+      Lv  2:        800 patches loaded)
+      Lv  3:         96 patches loaded)
+      Lv  4:         96 patches loaded)
+      Lv  5:          0 patches loaded)
+      Lv  6:          0 patches loaded)
+      Lv  7:          0 patches loaded)
+      Lv  8:          0 patches loaded)
+      Lv  9:          0 patches loaded)
+
+   Loading patches ... done
+   GetMinShellWidth ...
+      Minimum distance = 1.1085125e+02
+      Level            = 2
+      Shell scale      = 1.2800000e+02
+   GetMinShellWidth ... done
+LoadData_HDF5 ... done
+SetMaxRhoPos ...
+   GOOD : No high density points (> 8.5246196e+02) were found outside the target region
+   ===================================================================================
+   Maximum density:
+   Ranking  Lv  (            x,             y,             z)        Density
+         0   2  (1.0019531e+01, 9.9804688e+00, 1.0019531e+01)  9.4243583e+02
+         1   2  (9.9804688e+00, 9.9804688e+00, 9.9804688e+00)  9.0419551e+02
+         2   2  (1.0019531e+01, 9.9804688e+00, 9.9804688e+00)  8.9981361e+02
+         3   2  (9.9804688e+00, 1.0019531e+01, 1.0019531e+01)  8.9505228e+02
+         4   2  (9.9804688e+00, 1.0019531e+01, 9.9804688e+00)  8.9147823e+02
+         5   2  (9.9804688e+00, 9.9804688e+00, 1.0019531e+01)  8.8974035e+02
+         6   2  (9.9414062e+00, 9.9804688e+00, 9.9804688e+00)  8.8832867e+02
+         7   2  (1.0019531e+01, 1.0019531e+01, 1.0019531e+01)  8.5246196e+02
+
+   New center: (9.9903189e+00, 9.9948591e+00, 9.9999888e+00)
+   ===================================================================================
+LoadData_HDF5 ...
+   Loading simulation information ...
+      The format version of the HDF5 RESTART file = 2405
+   Loading simulation information ... done
+   Loading corner table ...
+   Loading corner table ... done
+   Loading son table ...
+   Loading son table ... done
+   Loading patches ...
+        0.0% completed ...
+       10.0% completed ...
+       20.0% completed ...
+       30.0% completed ...
+       39.9% completed ...
+       49.9% completed ...
+       59.9% completed ...
+       69.9% completed ...
+       79.9% completed ...
+       89.9% completed ...
+       99.9% completed ...
+
+      Lv  0:       4096 patches loaded)
+      Lv  1:        672 patches loaded)
+      Lv  2:        800 patches loaded)
+      Lv  3:         96 patches loaded)
+      Lv  4:         96 patches loaded)
+      Lv  5:          0 patches loaded)
+      Lv  6:          0 patches loaded)
+      Lv  7:          0 patches loaded)
+      Lv  8:          0 patches loaded)
+      Lv  9:          0 patches loaded)
+
+   Loading patches ... done
+   GetMinShellWidth ...
+      Minimum distance = 8.5770814e+01
+      Level            = 2
+      Shell scale      = 1.2800000e+02
+   GetMinShellWidth ... done
+LoadData_HDF5 ... done
+SetMaxRhoPos ... done
+TakeNote ... 
+======================================================================================
+
+Command-line arguments :
+ ./GAMER_ExtractProfile -D -i Data_f -S -r 2.9 -n 128 -x 10 -y 10 -z 10 -p
+
+MODEL            =          ELBDM
+FLOAT8           =             ON
+GAMER_DEBUG      =            OFF
+SUPPORT_HDF5     =             ON
+NCOMP_FLUID      =              3
+NCOMP_PASSIVE    =              0
+DumpID           =              1
+Time             =  2.5000000e-01
+Step             =           1250
+NX0_TOT[0]       =            128
+NX0_TOT[1]       =            128
+NX0_TOT[2]       =            128
+NIn              =              4
+NOut             =              4
+Center_x         =  9.9903189e+00
+Center_y         =  9.9948591e+00
+Center_z         =  9.9999888e+00
+MappedCenter_x   =  2.9990319e+01
+MappedCenter_y   =  2.9994859e+01
+MappedCenter_z   =  2.9999989e+01
+Radius           =  2.9000000e+00
+UseMaxRhoPos     =              8
+UseMaxRhoPos_R   =  2.9000000e+00
+UseMaxRhoPos_Par =              1
+Periodic         =              1
+InputScale       =              0
+LogBin           =  0.0000000e+00
+GetNShell        =  2.0000000e+00
+NShell           =             38
+ShellWidth       =  7.8125000e-02
+RhoThres         = -9.9999900e+05
+OutputPot        =  NO
+OutputParDens    =  1
+OutputCenter     =  NO
+NeedGhost        =  NO
+UseTree          =  NO
+FileName_Tree    =  (null)
+IntScheme        =  CQUAR
+ELBDM_IntPhase   =  YES
+ELBDM_GetVir     =  NO
+ELBDM_ETA        =  8.7605914e+03
+INT_MONO_COEFF   =  2.0000000e+00
+GetAvePot        =  NO
+======================================================================================
+TakeNote ... done
+CheckParameter ... done
+Init_ShellAve ... done
+Evaluating the shell average ...
+   Level 0 ... done
+   Level 1 ... done
+   Level 2 ... done
+   Level 3 ... done
+   Level 4 ... done
+   Level 5 ... done
+   Level 6 ... done
+   Level 7 ... done
+   Level 8 ... done
+   Level 9 ... done
+Evaluating the RMS ...
+   Level 0 ... done
+   Level 1 ... done
+   Level 2 ... done
+   Level 3 ... done
+   Level 4 ... done
+   Level 5 ... done
+   Level 6 ... done
+   Level 7 ... done
+   Level 8 ... done
+   Level 9 ... done
+Output_ShellAve ... done
+Program terminated successfully
+LoadData_HDF5 ...
+   Loading simulation information ...
+      The format version of the HDF5 RESTART file = 2405
+   Loading simulation information ... done
+   Loading corner table ...
+   Loading corner table ... done
+   Loading son table ...
+   Loading son table ... done
+   Loading patches ...
+        0.0% completed ...
+       10.0% completed ...
+       20.0% completed ...
+       30.0% completed ...
+       39.9% completed ...
+       49.9% completed ...
+       59.9% completed ...
+       69.9% completed ...
+       79.9% completed ...
+       89.9% completed ...
+       99.9% completed ...
+
+      Lv  0:       4096 patches loaded)
+      Lv  1:        704 patches loaded)
+      Lv  2:        800 patches loaded)
+      Lv  3:        144 patches loaded)
+      Lv  4:         64 patches loaded)
+      Lv  5:          0 patches loaded)
+      Lv  6:          0 patches loaded)
+      Lv  7:          0 patches loaded)
+      Lv  8:          0 patches loaded)
+      Lv  9:          0 patches loaded)
+
+   Loading patches ... done
+   GetMinShellWidth ...
+      Minimum distance = 1.1085125e+02
+      Level            = 2
+      Shell scale      = 1.2800000e+02
+   GetMinShellWidth ... done
+LoadData_HDF5 ... done
+SetMaxRhoPos ...
+   GOOD : No high density points (> 7.7823235e+02) were found outside the target region
+   ===================================================================================
+   Maximum density:
+   Ranking  Lv  (            x,             y,             z)        Density
+         0   2  (9.9804688e+00, 1.0019531e+01, 1.0019531e+01)  8.0101626e+02
+         1   2  (9.9804688e+00, 9.9804688e+00, 1.0019531e+01)  7.9928488e+02
+         2   2  (1.0019531e+01, 9.9804688e+00, 1.0019531e+01)  7.8858156e+02
+         3   2  (1.0019531e+01, 1.0019531e+01, 1.0019531e+01)  7.8703441e+02
+         4   2  (1.0019531e+01, 1.0019531e+01, 9.9804688e+00)  7.8127925e+02
+         5   2  (1.0019531e+01, 9.9804688e+00, 9.9804688e+00)  7.7999701e+02
+         6   2  (1.0019531e+01, 9.9414062e+00, 9.9804688e+00)  7.7948196e+02
+         7   2  (9.9804688e+00, 1.0019531e+01, 9.9804688e+00)  7.7823235e+02
+
+   New center: (1.0004771e+01, 9.9951637e+00, 1.0000177e+01)
+   ===================================================================================
+LoadData_HDF5 ...
+   Loading simulation information ...
+      The format version of the HDF5 RESTART file = 2405
+   Loading simulation information ... done
+   Loading corner table ...
+   Loading corner table ... done
+   Loading son table ...
+   Loading son table ... done
+   Loading patches ...
+        0.0% completed ...
+       10.0% completed ...
+       20.0% completed ...
+       30.0% completed ...
+       39.9% completed ...
+       49.9% completed ...
+       59.9% completed ...
+       69.9% completed ...
+       79.9% completed ...
+       89.9% completed ...
+       99.9% completed ...
+
+      Lv  0:       4096 patches loaded)
+      Lv  1:        704 patches loaded)
+      Lv  2:        800 patches loaded)
+      Lv  3:        144 patches loaded)
+      Lv  4:         64 patches loaded)
+      Lv  5:          0 patches loaded)
+      Lv  6:          0 patches loaded)
+      Lv  7:          0 patches loaded)
+      Lv  8:          0 patches loaded)
+      Lv  9:          0 patches loaded)
+
+   Loading patches ... done
+   GetMinShellWidth ...
+      Minimum distance = 9.3166815e+01
+      Level            = 2
+      Shell scale      = 1.2800000e+02
+   GetMinShellWidth ... done
+LoadData_HDF5 ... done
+SetMaxRhoPos ... done
+TakeNote ... 
+======================================================================================
+
+Command-line arguments :
+ ./GAMER_ExtractProfile -D -i Data_f -S -r 2.9 -n 128 -x 10 -y 10 -z 10 -p
+
+MODEL            =          ELBDM
+FLOAT8           =             ON
+GAMER_DEBUG      =            OFF
+SUPPORT_HDF5     =             ON
+NCOMP_FLUID      =              3
+NCOMP_PASSIVE    =              0
+DumpID           =              2
+Time             =  5.0000000e-01
+Step             =           2500
+NX0_TOT[0]       =            128
+NX0_TOT[1]       =            128
+NX0_TOT[2]       =            128
+NIn              =              4
+NOut             =              4
+Center_x         =  1.0004771e+01
+Center_y         =  9.9951637e+00
+Center_z         =  1.0000177e+01
+MappedCenter_x   = -9.9952285e+00
+MappedCenter_y   =  2.9995164e+01
+MappedCenter_z   = -9.9998234e+00
+Radius           =  2.9000000e+00
+UseMaxRhoPos     =              8
+UseMaxRhoPos_R   =  2.9000000e+00
+UseMaxRhoPos_Par =              1
+Periodic         =              1
+InputScale       =              0
+LogBin           =  0.0000000e+00
+GetNShell        =  2.0000000e+00
+NShell           =             38
+ShellWidth       =  7.8125000e-02
+RhoThres         = -9.9999900e+05
+OutputPot        =  NO
+OutputParDens    =  1
+OutputCenter     =  NO
+NeedGhost        =  NO
+UseTree          =  NO
+FileName_Tree    =  (null)
+IntScheme        =  CQUAR
+ELBDM_IntPhase   =  YES
+ELBDM_GetVir     =  NO
+ELBDM_ETA        =  8.7605914e+03
+INT_MONO_COEFF   =  2.0000000e+00
+GetAvePot        =  NO
+======================================================================================
+TakeNote ... done
+CheckParameter ... done
+Init_ShellAve ... done
+Evaluating the shell average ...
+   Level 0 ... done
+   Level 1 ... done
+   Level 2 ... done
+   Level 3 ... done
+   Level 4 ... done
+   Level 5 ... done
+   Level 6 ... done
+   Level 7 ... done
+   Level 8 ... done
+   Level 9 ... done
+Evaluating the RMS ...
+   Level 0 ... done
+   Level 1 ... done
+   Level 2 ... done
+   Level 3 ... done
+   Level 4 ... done
+   Level 5 ... done
+   Level 6 ... done
+   Level 7 ... done
+   Level 8 ... done
+   Level 9 ... done
+Output_ShellAve ... done
+Program terminated successfully
+LoadData_HDF5 ...
+   Loading simulation information ...
+      The format version of the HDF5 RESTART file = 2405
+   Loading simulation information ... done
+   Loading corner table ...
+   Loading corner table ... done
+   Loading son table ...
+   Loading son table ... done
+   Loading patches ...
+        0.0% completed ...
+       10.0% completed ...
+       20.0% completed ...
+       30.0% completed ...
+       39.9% completed ...
+       49.9% completed ...
+       59.9% completed ...
+       69.9% completed ...
+       79.9% completed ...
+       89.9% completed ...
+       99.9% completed ...
+
+      Lv  0:       4096 patches loaded)
+      Lv  1:        760 patches loaded)
+      Lv  2:        872 patches loaded)
+      Lv  3:         64 patches loaded)
+      Lv  4:         64 patches loaded)
+      Lv  5:          0 patches loaded)
+      Lv  6:          0 patches loaded)
+      Lv  7:          0 patches loaded)
+      Lv  8:          0 patches loaded)
+      Lv  9:          0 patches loaded)
+
+   Loading patches ... done
+   GetMinShellWidth ...
+      Minimum distance = 1.1085125e+02
+      Level            = 2
+      Shell scale      = 1.2800000e+02
+   GetMinShellWidth ... done
+LoadData_HDF5 ... done
+SetMaxRhoPos ...
+   GOOD : No high density points (> 8.2732746e+02) were found outside the target region
+   ===================================================================================
+   Maximum density:
+   Ranking  Lv  (            x,             y,             z)        Density
+         0   2  (1.0019531e+01, 1.0019531e+01, 1.0019531e+01)  9.0582738e+02
+         1   2  (1.0019531e+01, 1.0019531e+01, 9.9804688e+00)  9.0194353e+02
+         2   2  (9.9804688e+00, 1.0019531e+01, 1.0019531e+01)  9.0014106e+02
+         3   2  (9.9804688e+00, 9.9804688e+00, 1.0019531e+01)  8.9408281e+02
+         4   2  (1.0019531e+01, 9.9804688e+00, 1.0019531e+01)  8.8718806e+02
+         5   2  (1.0019531e+01, 9.9804688e+00, 9.9804688e+00)  8.8448538e+02
+         6   2  (9.9804688e+00, 9.9804688e+00, 9.9804688e+00)  8.2937154e+02
+         7   2  (9.9804688e+00, 1.0019531e+01, 9.9804688e+00)  8.2732746e+02
+
+   New center: (1.0000357e+01, 1.0000111e+01, 1.0000400e+01)
+   ===================================================================================
+LoadData_HDF5 ...
+   Loading simulation information ...
+      The format version of the HDF5 RESTART file = 2405
+   Loading simulation information ... done
+   Loading corner table ...
+   Loading corner table ... done
+   Loading son table ...
+   Loading son table ... done
+   Loading patches ...
+        0.0% completed ...
+       10.0% completed ...
+       20.0% completed ...
+       30.0% completed ...
+       39.9% completed ...
+       49.9% completed ...
+       59.9% completed ...
+       69.9% completed ...
+       79.9% completed ...
+       89.9% completed ...
+       99.9% completed ...
+
+      Lv  0:       4096 patches loaded)
+      Lv  1:        760 patches loaded)
+      Lv  2:        872 patches loaded)
+      Lv  3:         64 patches loaded)
+      Lv  4:         64 patches loaded)
+      Lv  5:          0 patches loaded)
+      Lv  6:          0 patches loaded)
+      Lv  7:          0 patches loaded)
+      Lv  8:          0 patches loaded)
+      Lv  9:          0 patches loaded)
+
+   Loading patches ... done
+   GetMinShellWidth ...
+      Minimum distance = 1.0920991e+02
+      Level            = 2
+      Shell scale      = 1.2800000e+02
+   GetMinShellWidth ... done
+LoadData_HDF5 ... done
+SetMaxRhoPos ... done
+TakeNote ... 
+======================================================================================
+
+Command-line arguments :
+ ./GAMER_ExtractProfile -D -i Data_f -S -r 2.9 -n 128 -x 10 -y 10 -z 10 -p
+
+MODEL            =          ELBDM
+FLOAT8           =             ON
+GAMER_DEBUG      =            OFF
+SUPPORT_HDF5     =             ON
+NCOMP_FLUID      =              3
+NCOMP_PASSIVE    =              0
+DumpID           =              3
+Time             =  7.5000000e-01
+Step             =           3750
+NX0_TOT[0]       =            128
+NX0_TOT[1]       =            128
+NX0_TOT[2]       =            128
+NIn              =              4
+NOut             =              4
+Center_x         =  1.0000357e+01
+Center_y         =  1.0000111e+01
+Center_z         =  1.0000400e+01
+MappedCenter_x   = -9.9996430e+00
+MappedCenter_y   = -9.9998886e+00
+MappedCenter_z   = -9.9995996e+00
+Radius           =  2.9000000e+00
+UseMaxRhoPos     =              8
+UseMaxRhoPos_R   =  2.9000000e+00
+UseMaxRhoPos_Par =              1
+Periodic         =              1
+InputScale       =              0
+LogBin           =  0.0000000e+00
+GetNShell        =  2.0000000e+00
+NShell           =             38
+ShellWidth       =  7.8125000e-02
+RhoThres         = -9.9999900e+05
+OutputPot        =  NO
+OutputParDens    =  1
+OutputCenter     =  NO
+NeedGhost        =  NO
+UseTree          =  NO
+FileName_Tree    =  (null)
+IntScheme        =  CQUAR
+ELBDM_IntPhase   =  YES
+ELBDM_GetVir     =  NO
+ELBDM_ETA        =  8.7605914e+03
+INT_MONO_COEFF   =  2.0000000e+00
+GetAvePot        =  NO
+======================================================================================
+TakeNote ... done
+CheckParameter ... done
+Init_ShellAve ... done
+Evaluating the shell average ...
+   Level 0 ... done
+   Level 1 ... done
+   Level 2 ... done
+   Level 3 ... done
+   Level 4 ... done
+   Level 5 ... done
+   Level 6 ... done
+   Level 7 ... done
+   Level 8 ... done
+   Level 9 ... done
+Evaluating the RMS ...
+   Level 0 ... done
+   Level 1 ... done
+   Level 2 ... done
+   Level 3 ... done
+   Level 4 ... done
+   Level 5 ... done
+   Level 6 ... done
+   Level 7 ... done
+   Level 8 ... done
+   Level 9 ... done
+Output_ShellAve ... done
+Program terminated successfully
+LoadData_HDF5 ...
+   Loading simulation information ...
+      The format version of the HDF5 RESTART file = 2405
+   Loading simulation information ... done
+   Loading corner table ...
+   Loading corner table ... done
+   Loading son table ...
+   Loading son table ... done
+   Loading patches ...
+        0.0% completed ...
+       10.0% completed ...
+       20.0% completed ...
+       30.0% completed ...
+       39.9% completed ...
+       49.9% completed ...
+       59.9% completed ...
+       69.9% completed ...
+       79.9% completed ...
+       89.9% completed ...
+       99.9% completed ...
+
+      Lv  0:       4096 patches loaded)
+      Lv  1:        704 patches loaded)
+      Lv  2:        800 patches loaded)
+      Lv  3:         64 patches loaded)
+      Lv  4:         64 patches loaded)
+      Lv  5:          0 patches loaded)
+      Lv  6:          0 patches loaded)
+      Lv  7:          0 patches loaded)
+      Lv  8:          0 patches loaded)
+      Lv  9:          0 patches loaded)
+
+   Loading patches ... done
+   GetMinShellWidth ...
+      Minimum distance = 1.1085125e+02
+      Level            = 2
+      Shell scale      = 1.2800000e+02
+   GetMinShellWidth ... done
+LoadData_HDF5 ... done
+SetMaxRhoPos ...
+   GOOD : No high density points (> 7.9481238e+02) were found outside the target region
+   ===================================================================================
+   Maximum density:
+   Ranking  Lv  (            x,             y,             z)        Density
+         0   2  (9.9804688e+00, 9.9804688e+00, 1.0019531e+01)  9.1323860e+02
+         1   2  (1.0019531e+01, 9.9804688e+00, 1.0019531e+01)  8.6516960e+02
+         2   2  (1.0019531e+01, 1.0019531e+01, 1.0019531e+01)  8.6195468e+02
+         3   2  (1.0019531e+01, 9.9804688e+00, 9.9804688e+00)  8.3847589e+02
+         4   2  (9.9804688e+00, 9.9804688e+00, 9.9804688e+00)  8.3832700e+02
+         5   2  (1.0058594e+01, 9.9804688e+00, 1.0019531e+01)  8.2653253e+02
+         6   2  (1.0019531e+01, 1.0019531e+01, 9.9804688e+00)  8.0075641e+02
+         7   2  (9.9804688e+00, 1.0019531e+01, 1.0019531e+01)  7.9481238e+02
+
+   New center: (1.0009563e+01, 9.9947132e+00, 1.0005171e+01)
+   ===================================================================================
+LoadData_HDF5 ...
+   Loading simulation information ...
+      The format version of the HDF5 RESTART file = 2405
+   Loading simulation information ... done
+   Loading corner table ...
+   Loading corner table ... done
+   Loading son table ...
+   Loading son table ... done
+   Loading patches ...
+        0.0% completed ...
+       10.0% completed ...
+       20.0% completed ...
+       30.0% completed ...
+       39.9% completed ...
+       49.9% completed ...
+       59.9% completed ...
+       69.9% completed ...
+       79.9% completed ...
+       89.9% completed ...
+       99.9% completed ...
+
+      Lv  0:       4096 patches loaded)
+      Lv  1:        704 patches loaded)
+      Lv  2:        800 patches loaded)
+      Lv  3:         64 patches loaded)
+      Lv  4:         64 patches loaded)
+      Lv  5:          0 patches loaded)
+      Lv  6:          0 patches loaded)
+      Lv  7:          0 patches loaded)
+      Lv  8:          0 patches loaded)
+      Lv  9:          0 patches loaded)
+
+   Loading patches ... done
+   GetMinShellWidth ...
+      Minimum distance = 7.3891925e+01
+      Level            = 2
+      Shell scale      = 1.2800000e+02
+   GetMinShellWidth ... done
+LoadData_HDF5 ... done
+SetMaxRhoPos ... done
+TakeNote ... 
+======================================================================================
+
+Command-line arguments :
+ ./GAMER_ExtractProfile -D -i Data_f -S -r 2.9 -n 128 -x 10 -y 10 -z 10 -p
+
+MODEL            =          ELBDM
+FLOAT8           =             ON
+GAMER_DEBUG      =            OFF
+SUPPORT_HDF5     =             ON
+NCOMP_FLUID      =              3
+NCOMP_PASSIVE    =              0
+DumpID           =              4
+Time             =  1.0000000e+00
+Step             =           5000
+NX0_TOT[0]       =            128
+NX0_TOT[1]       =            128
+NX0_TOT[2]       =            128
+NIn              =              4
+NOut             =              4
+Center_x         =  1.0009563e+01
+Center_y         =  9.9947132e+00
+Center_z         =  1.0005171e+01
+MappedCenter_x   = -9.9904374e+00
+MappedCenter_y   =  2.9994713e+01
+MappedCenter_z   = -9.9948293e+00
+Radius           =  2.9000000e+00
+UseMaxRhoPos     =              8
+UseMaxRhoPos_R   =  2.9000000e+00
+UseMaxRhoPos_Par =              1
+Periodic         =              1
+InputScale       =              0
+LogBin           =  0.0000000e+00
+GetNShell        =  2.0000000e+00
+NShell           =             38
+ShellWidth       =  7.8125000e-02
+RhoThres         = -9.9999900e+05
+OutputPot        =  NO
+OutputParDens    =  1
+OutputCenter     =  NO
+NeedGhost        =  NO
+UseTree          =  NO
+FileName_Tree    =  (null)
+IntScheme        =  CQUAR
+ELBDM_IntPhase   =  YES
+ELBDM_GetVir     =  NO
+ELBDM_ETA        =  8.7605914e+03
+INT_MONO_COEFF   =  2.0000000e+00
+GetAvePot        =  NO
+======================================================================================
+TakeNote ... done
+CheckParameter ... done
+Init_ShellAve ... done
+Evaluating the shell average ...
+   Level 0 ... done
+   Level 1 ... done
+   Level 2 ... done
+   Level 3 ... done
+   Level 4 ... done
+   Level 5 ... done
+   Level 6 ... done
+   Level 7 ... done
+   Level 8 ... done
+   Level 9 ... done
+Evaluating the RMS ...
+   Level 0 ... done
+   Level 1 ... done
+   Level 2 ... done
+   Level 3 ... done
+   Level 4 ... done
+   Level 5 ... done
+   Level 6 ... done
+   Level 7 ... done
+   Level 8 ... done
+   Level 9 ... done
+Output_ShellAve ... done
+Program terminated successfully
+LoadData_HDF5 ...
+   Loading simulation information ...
+      The format version of the HDF5 RESTART file = 2405
+   Loading simulation information ... done
+   Loading corner table ...
+   Loading corner table ... done
+   Loading son table ...
+   Loading son table ... done
+   Loading patches ...
+        0.0% completed ...
+       10.0% completed ...
+       20.0% completed ...
+       30.0% completed ...
+       39.9% completed ...
+       49.9% completed ...
+       59.9% completed ...
+       69.9% completed ...
+       79.9% completed ...
+       89.9% completed ...
+       99.9% completed ...
+
+      Lv  0:       4096 patches loaded)
+      Lv  1:        704 patches loaded)
+      Lv  2:        800 patches loaded)
+      Lv  3:         64 patches loaded)
+      Lv  4:         64 patches loaded)
+      Lv  5:          0 patches loaded)
+      Lv  6:          0 patches loaded)
+      Lv  7:          0 patches loaded)
+      Lv  8:          0 patches loaded)
+      Lv  9:          0 patches loaded)
+
+   Loading patches ... done
+   GetMinShellWidth ...
+      Minimum distance = 1.1085125e+02
+      Level            = 2
+      Shell scale      = 1.2800000e+02
+   GetMinShellWidth ... done
+LoadData_HDF5 ... done
+SetMaxRhoPos ...
+   GOOD : No high density points (> 9.3213058e+02) were found outside the target region
+   ===================================================================================
+   Maximum density:
+   Ranking  Lv  (            x,             y,             z)        Density
+         0   2  (1.0019531e+01, 1.0019531e+01, 9.9804688e+00)  1.0430238e+03
+         1   2  (1.0019531e+01, 1.0019531e+01, 1.0019531e+01)  1.0200885e+03
+         2   2  (1.0019531e+01, 9.9804688e+00, 9.9804688e+00)  1.0062022e+03
+         3   2  (9.9804688e+00, 1.0019531e+01, 9.9804688e+00)  9.8177364e+02
+         4   2  (9.9804688e+00, 9.9804688e+00, 9.9804688e+00)  9.7696342e+02
+         5   2  (9.9804688e+00, 9.9804688e+00, 1.0019531e+01)  9.7547764e+02
+         6   2  (9.9804688e+00, 1.0019531e+01, 1.0019531e+01)  9.7456010e+02
+         7   2  (1.0019531e+01, 9.9804688e+00, 1.0019531e+01)  9.3213058e+02
+
+   New center: (1.0000229e+01, 1.0000318e+01, 9.9997390e+00)
+   ===================================================================================
+LoadData_HDF5 ...
+   Loading simulation information ...
+      The format version of the HDF5 RESTART file = 2405
+   Loading simulation information ... done
+   Loading corner table ...
+   Loading corner table ... done
+   Loading son table ...
+   Loading son table ... done
+   Loading patches ...
+        0.0% completed ...
+       10.0% completed ...
+       20.0% completed ...
+       30.0% completed ...
+       39.9% completed ...
+       49.9% completed ...
+       59.9% completed ...
+       69.9% completed ...
+       79.9% completed ...
+       89.9% completed ...
+       99.9% completed ...
+
+      Lv  0:       4096 patches loaded)
+      Lv  1:        704 patches loaded)
+      Lv  2:        800 patches loaded)
+      Lv  3:         64 patches loaded)
+      Lv  4:         64 patches loaded)
+      Lv  5:          0 patches loaded)
+      Lv  6:          0 patches loaded)
+      Lv  7:          0 patches loaded)
+      Lv  8:          0 patches loaded)
+      Lv  9:          0 patches loaded)
+
+   Loading patches ... done
+   GetMinShellWidth ...
+      Minimum distance = 1.0932373e+02
+      Level            = 2
+      Shell scale      = 1.2800000e+02
+   GetMinShellWidth ... done
+LoadData_HDF5 ... done
+SetMaxRhoPos ... done
+TakeNote ... 
+======================================================================================
+
+Command-line arguments :
+ ./GAMER_ExtractProfile -D -i Data_f -S -r 2.9 -n 128 -x 10 -y 10 -z 10 -p
+
+MODEL            =          ELBDM
+FLOAT8           =             ON
+GAMER_DEBUG      =            OFF
+SUPPORT_HDF5     =             ON
+NCOMP_FLUID      =              3
+NCOMP_PASSIVE    =              0
+DumpID           =              5
+Time             =  1.2500000e+00
+Step             =           6250
+NX0_TOT[0]       =            128
+NX0_TOT[1]       =            128
+NX0_TOT[2]       =            128
+NIn              =              4
+NOut             =              4
+Center_x         =  1.0000229e+01
+Center_y         =  1.0000318e+01
+Center_z         =  9.9997390e+00
+MappedCenter_x   = -9.9997712e+00
+MappedCenter_y   = -9.9996823e+00
+MappedCenter_z   =  2.9999739e+01
+Radius           =  2.9000000e+00
+UseMaxRhoPos     =              8
+UseMaxRhoPos_R   =  2.9000000e+00
+UseMaxRhoPos_Par =              1
+Periodic         =              1
+InputScale       =              0
+LogBin           =  0.0000000e+00
+GetNShell        =  2.0000000e+00
+NShell           =             38
+ShellWidth       =  7.8125000e-02
+RhoThres         = -9.9999900e+05
+OutputPot        =  NO
+OutputParDens    =  1
+OutputCenter     =  NO
+NeedGhost        =  NO
+UseTree          =  NO
+FileName_Tree    =  (null)
+IntScheme        =  CQUAR
+ELBDM_IntPhase   =  YES
+ELBDM_GetVir     =  NO
+ELBDM_ETA        =  8.7605914e+03
+INT_MONO_COEFF   =  2.0000000e+00
+GetAvePot        =  NO
+======================================================================================
+TakeNote ... done
+CheckParameter ... done
+Init_ShellAve ... done
+Evaluating the shell average ...
+   Level 0 ... done
+   Level 1 ... done
+   Level 2 ... done
+   Level 3 ... done
+   Level 4 ... done
+   Level 5 ... done
+   Level 6 ... done
+   Level 7 ... done
+   Level 8 ... done
+   Level 9 ... done
+Evaluating the RMS ...
+   Level 0 ... done
+   Level 1 ... done
+   Level 2 ... done
+   Level 3 ... done
+   Level 4 ... done
+   Level 5 ... done
+   Level 6 ... done
+   Level 7 ... done
+   Level 8 ... done
+   Level 9 ... done
+Output_ShellAve ... done
+Program terminated successfully
+LoadData_HDF5 ...
+   Loading simulation information ...
+      The format version of the HDF5 RESTART file = 2405
+   Loading simulation information ... done
+   Loading corner table ...
+   Loading corner table ... done
+   Loading son table ...
+   Loading son table ... done
+   Loading patches ...
+        0.0% completed ...
+       10.0% completed ...
+       20.0% completed ...
+       30.0% completed ...
+       39.9% completed ...
+       49.9% completed ...
+       59.9% completed ...
+       69.9% completed ...
+       79.9% completed ...
+       89.9% completed ...
+       99.9% completed ...
+
+      Lv  0:       4096 patches loaded)
+      Lv  1:        736 patches loaded)
+      Lv  2:        800 patches loaded)
+      Lv  3:         96 patches loaded)
+      Lv  4:         64 patches loaded)
+      Lv  5:          0 patches loaded)
+      Lv  6:          0 patches loaded)
+      Lv  7:          0 patches loaded)
+      Lv  8:          0 patches loaded)
+      Lv  9:          0 patches loaded)
+
+   Loading patches ... done
+   GetMinShellWidth ...
+      Minimum distance = 1.1085125e+02
+      Level            = 2
+      Shell scale      = 1.2800000e+02
+   GetMinShellWidth ... done
+LoadData_HDF5 ... done
+SetMaxRhoPos ...
+   GOOD : No high density points (> 8.0705959e+02) were found outside the target region
+   ===================================================================================
+   Maximum density:
+   Ranking  Lv  (            x,             y,             z)        Density
+         0   2  (9.9804688e+00, 9.9804688e+00, 9.9804688e+00)  8.9768754e+02
+         1   2  (1.0019531e+01, 9.9804688e+00, 9.9804688e+00)  8.9406211e+02
+         2   2  (9.9804688e+00, 1.0019531e+01, 9.9804688e+00)  8.8400474e+02
+         3   2  (9.9804688e+00, 1.0019531e+01, 1.0019531e+01)  8.4388480e+02
+         4   2  (9.9804688e+00, 9.9804688e+00, 1.0019531e+01)  8.3492722e+02
+         5   2  (1.0019531e+01, 1.0019531e+01, 9.9804688e+00)  8.2030372e+02
+         6   2  (1.0019531e+01, 9.9804688e+00, 1.0019531e+01)  8.1851162e+02
+         7   2  (1.0019531e+01, 1.0019531e+01, 1.0019531e+01)  8.0705959e+02
+
+   New center: (9.9996537e+00, 9.9997417e+00, 9.9994495e+00)
+   ===================================================================================
+LoadData_HDF5 ...
+   Loading simulation information ...
+      The format version of the HDF5 RESTART file = 2405
+   Loading simulation information ... done
+   Loading corner table ...
+   Loading corner table ... done
+   Loading son table ...
+   Loading son table ... done
+   Loading patches ...
+        0.0% completed ...
+       10.0% completed ...
+       20.0% completed ...
+       30.0% completed ...
+       39.9% completed ...
+       49.9% completed ...
+       59.9% completed ...
+       69.9% completed ...
+       79.9% completed ...
+       89.9% completed ...
+       99.9% completed ...
+
+      Lv  0:       4096 patches loaded)
+      Lv  1:        736 patches loaded)
+      Lv  2:        800 patches loaded)
+      Lv  3:         96 patches loaded)
+      Lv  4:         64 patches loaded)
+      Lv  5:          0 patches loaded)
+      Lv  6:          0 patches loaded)
+      Lv  7:          0 patches loaded)
+      Lv  8:          0 patches loaded)
+      Lv  9:          0 patches loaded)
+
+   Loading patches ... done
+   GetMinShellWidth ...
+      Minimum distance = 1.0866823e+02
+      Level            = 2
+      Shell scale      = 1.2800000e+02
+   GetMinShellWidth ... done
+LoadData_HDF5 ... done
+SetMaxRhoPos ... done
+TakeNote ... 
+======================================================================================
+
+Command-line arguments :
+ ./GAMER_ExtractProfile -D -i Data_f -S -r 2.9 -n 128 -x 10 -y 10 -z 10 -p
+
+MODEL            =          ELBDM
+FLOAT8           =             ON
+GAMER_DEBUG      =            OFF
+SUPPORT_HDF5     =             ON
+NCOMP_FLUID      =              3
+NCOMP_PASSIVE    =              0
+DumpID           =              6
+Time             =  1.5000000e+00
+Step             =           7500
+NX0_TOT[0]       =            128
+NX0_TOT[1]       =            128
+NX0_TOT[2]       =            128
+NIn              =              4
+NOut             =              4
+Center_x         =  9.9996537e+00
+Center_y         =  9.9997417e+00
+Center_z         =  9.9994495e+00
+MappedCenter_x   =  2.9999654e+01
+MappedCenter_y   =  2.9999742e+01
+MappedCenter_z   =  2.9999449e+01
+Radius           =  2.9000000e+00
+UseMaxRhoPos     =              8
+UseMaxRhoPos_R   =  2.9000000e+00
+UseMaxRhoPos_Par =              1
+Periodic         =              1
+InputScale       =              0
+LogBin           =  0.0000000e+00
+GetNShell        =  2.0000000e+00
+NShell           =             38
+ShellWidth       =  7.8125000e-02
+RhoThres         = -9.9999900e+05
+OutputPot        =  NO
+OutputParDens    =  1
+OutputCenter     =  NO
+NeedGhost        =  NO
+UseTree          =  NO
+FileName_Tree    =  (null)
+IntScheme        =  CQUAR
+ELBDM_IntPhase   =  YES
+ELBDM_GetVir     =  NO
+ELBDM_ETA        =  8.7605914e+03
+INT_MONO_COEFF   =  2.0000000e+00
+GetAvePot        =  NO
+======================================================================================
+TakeNote ... done
+CheckParameter ... done
+Init_ShellAve ... done
+Evaluating the shell average ...
+   Level 0 ... done
+   Level 1 ... done
+   Level 2 ... done
+   Level 3 ... done
+   Level 4 ... done
+   Level 5 ... done
+   Level 6 ... done
+   Level 7 ... done
+   Level 8 ... done
+   Level 9 ... done
+Evaluating the RMS ...
+   Level 0 ... done
+   Level 1 ... done
+   Level 2 ... done
+   Level 3 ... done
+   Level 4 ... done
+   Level 5 ... done
+   Level 6 ... done
+   Level 7 ... done
+   Level 8 ... done
+   Level 9 ... done
+Output_ShellAve ... done
+Program terminated successfully
+LoadData_HDF5 ...
+   Loading simulation information ...
+      The format version of the HDF5 RESTART file = 2405
+   Loading simulation information ... done
+   Loading corner table ...
+   Loading corner table ... done
+   Loading son table ...
+   Loading son table ... done
+   Loading patches ...
+        0.0% completed ...
+       10.0% completed ...
+       20.0% completed ...
+       30.0% completed ...
+       39.9% completed ...
+       49.9% completed ...
+       59.9% completed ...
+       69.9% completed ...
+       79.9% completed ...
+       89.9% completed ...
+       99.9% completed ...
+
+      Lv  0:       4096 patches loaded)
+      Lv  1:        704 patches loaded)
+      Lv  2:        800 patches loaded)
+      Lv  3:         96 patches loaded)
+      Lv  4:         64 patches loaded)
+      Lv  5:          0 patches loaded)
+      Lv  6:          0 patches loaded)
+      Lv  7:          0 patches loaded)
+      Lv  8:          0 patches loaded)
+      Lv  9:          0 patches loaded)
+
+   Loading patches ... done
+   GetMinShellWidth ...
+      Minimum distance = 1.1085125e+02
+      Level            = 2
+      Shell scale      = 1.2800000e+02
+   GetMinShellWidth ... done
+LoadData_HDF5 ... done
+SetMaxRhoPos ...
+   GOOD : No high density points (> 7.7533482e+02) were found outside the target region
+   ===================================================================================
+   Maximum density:
+   Ranking  Lv  (            x,             y,             z)        Density
+         0   2  (1.0019531e+01, 9.9804688e+00, 9.9804688e+00)  8.4363125e+02
+         1   2  (9.9804688e+00, 9.9804688e+00, 9.9804688e+00)  8.4192340e+02
+         2   2  (1.0019531e+01, 1.0019531e+01, 9.9804688e+00)  8.2823172e+02
+         3   2  (9.9804688e+00, 1.0058594e+01, 9.9804688e+00)  8.0625993e+02
+         4   2  (9.9804688e+00, 1.0019531e+01, 9.9804688e+00)  8.0165395e+02
+         5   2  (9.9804688e+00, 9.9804688e+00, 1.0019531e+01)  7.9675786e+02
+         6   2  (1.0019531e+01, 9.9804688e+00, 1.0019531e+01)  7.8352185e+02
+         7   2  (1.0019531e+01, 1.0019531e+01, 9.9414062e+00)  7.7533482e+02
+
+   New center: (9.9999521e+00, 1.0004698e+01, 9.9853231e+00)
+   ===================================================================================
+LoadData_HDF5 ...
+   Loading simulation information ...
+      The format version of the HDF5 RESTART file = 2405
+   Loading simulation information ... done
+   Loading corner table ...
+   Loading corner table ... done
+   Loading son table ...
+   Loading son table ... done
+   Loading patches ...
+        0.0% completed ...
+       10.0% completed ...
+       20.0% completed ...
+       30.0% completed ...
+       39.9% completed ...
+       49.9% completed ...
+       59.9% completed ...
+       69.9% completed ...
+       79.9% completed ...
+       89.9% completed ...
+       99.9% completed ...
+
+      Lv  0:       4096 patches loaded)
+      Lv  1:        704 patches loaded)
+      Lv  2:        800 patches loaded)
+      Lv  3:         96 patches loaded)
+      Lv  4:         64 patches loaded)
+      Lv  5:          0 patches loaded)
+      Lv  6:          0 patches loaded)
+      Lv  7:          0 patches loaded)
+      Lv  8:          0 patches loaded)
+      Lv  9:          0 patches loaded)
+
+   Loading patches ... done
+   GetMinShellWidth ...
+      Minimum distance = 8.1800681e+01
+      Level            = 2
+      Shell scale      = 1.2800000e+02
+   GetMinShellWidth ... done
+LoadData_HDF5 ... done
+SetMaxRhoPos ... done
+TakeNote ... 
+======================================================================================
+
+Command-line arguments :
+ ./GAMER_ExtractProfile -D -i Data_f -S -r 2.9 -n 128 -x 10 -y 10 -z 10 -p
+
+MODEL            =          ELBDM
+FLOAT8           =             ON
+GAMER_DEBUG      =            OFF
+SUPPORT_HDF5     =             ON
+NCOMP_FLUID      =              3
+NCOMP_PASSIVE    =              0
+DumpID           =              7
+Time             =  1.7500000e+00
+Step             =           8750
+NX0_TOT[0]       =            128
+NX0_TOT[1]       =            128
+NX0_TOT[2]       =            128
+NIn              =              4
+NOut             =              4
+Center_x         =  9.9999521e+00
+Center_y         =  1.0004698e+01
+Center_z         =  9.9853231e+00
+MappedCenter_x   =  2.9999952e+01
+MappedCenter_y   = -9.9953016e+00
+MappedCenter_z   =  2.9985323e+01
+Radius           =  2.9000000e+00
+UseMaxRhoPos     =              8
+UseMaxRhoPos_R   =  2.9000000e+00
+UseMaxRhoPos_Par =              1
+Periodic         =              1
+InputScale       =              0
+LogBin           =  0.0000000e+00
+GetNShell        =  2.0000000e+00
+NShell           =             38
+ShellWidth       =  7.8125000e-02
+RhoThres         = -9.9999900e+05
+OutputPot        =  NO
+OutputParDens    =  1
+OutputCenter     =  NO
+NeedGhost        =  NO
+UseTree          =  NO
+FileName_Tree    =  (null)
+IntScheme        =  CQUAR
+ELBDM_IntPhase   =  YES
+ELBDM_GetVir     =  NO
+ELBDM_ETA        =  8.7605914e+03
+INT_MONO_COEFF   =  2.0000000e+00
+GetAvePot        =  NO
+======================================================================================
+TakeNote ... done
+CheckParameter ... done
+Init_ShellAve ... done
+Evaluating the shell average ...
+   Level 0 ... done
+   Level 1 ... done
+   Level 2 ... done
+   Level 3 ... done
+   Level 4 ... done
+   Level 5 ... done
+   Level 6 ... done
+   Level 7 ... done
+   Level 8 ... done
+   Level 9 ... done
+Evaluating the RMS ...
+   Level 0 ... done
+   Level 1 ... done
+   Level 2 ... done
+   Level 3 ... done
+   Level 4 ... done
+   Level 5 ... done
+   Level 6 ... done
+   Level 7 ... done
+   Level 8 ... done
+   Level 9 ... done
+Output_ShellAve ... done
+Program terminated successfully
+LoadData_HDF5 ...
+   Loading simulation information ...
+      The format version of the HDF5 RESTART file = 2405
+   Loading simulation information ... done
+   Loading corner table ...
+   Loading corner table ... done
+   Loading son table ...
+   Loading son table ... done
+   Loading patches ...
+        0.0% completed ...
+       10.0% completed ...
+       20.0% completed ...
+       30.0% completed ...
+       39.9% completed ...
+       49.9% completed ...
+       59.9% completed ...
+       69.9% completed ...
+       79.9% completed ...
+       89.9% completed ...
+       99.9% completed ...
+
+      Lv  0:       4096 patches loaded)
+      Lv  1:        768 patches loaded)
+      Lv  2:        896 patches loaded)
+      Lv  3:         96 patches loaded)
+      Lv  4:         96 patches loaded)
+      Lv  5:          0 patches loaded)
+      Lv  6:          0 patches loaded)
+      Lv  7:          0 patches loaded)
+      Lv  8:          0 patches loaded)
+      Lv  9:          0 patches loaded)
+
+   Loading patches ... done
+   GetMinShellWidth ...
+      Minimum distance = 1.1085125e+02
+      Level            = 2
+      Shell scale      = 1.2800000e+02
+   GetMinShellWidth ... done
+LoadData_HDF5 ... done
+SetMaxRhoPos ...
+   GOOD : No high density points (> 9.5264507e+02) were found outside the target region
+   ===================================================================================
+   Maximum density:
+   Ranking  Lv  (            x,             y,             z)        Density
+         0   2  (1.0019531e+01, 1.0019531e+01, 1.0019531e+01)  1.0183206e+03
+         1   2  (9.9804688e+00, 1.0019531e+01, 1.0019531e+01)  9.8812072e+02
+         2   2  (9.9804688e+00, 9.9804688e+00, 9.9804688e+00)  9.8724993e+02
+         3   2  (1.0019531e+01, 9.9804688e+00, 9.9804688e+00)  9.8237274e+02
+         4   2  (1.0019531e+01, 9.9804688e+00, 1.0019531e+01)  9.7143524e+02
+         5   2  (1.0019531e+01, 1.0019531e+01, 9.9804688e+00)  9.6703806e+02
+         6   2  (9.9804688e+00, 1.0019531e+01, 9.9804688e+00)  9.5553870e+02
+         7   2  (9.9804688e+00, 9.9804688e+00, 1.0019531e+01)  9.5264507e+02
+
+   New center: (1.0000139e+01, 1.0000088e+01, 1.0000096e+01)
+   ===================================================================================
+LoadData_HDF5 ...
+   Loading simulation information ...
+      The format version of the HDF5 RESTART file = 2405
+   Loading simulation information ... done
+   Loading corner table ...
+   Loading corner table ... done
+   Loading son table ...
+   Loading son table ... done
+   Loading patches ...
+        0.0% completed ...
+       10.0% completed ...
+       20.0% completed ...
+       30.0% completed ...
+       39.9% completed ...
+       49.9% completed ...
+       59.9% completed ...
+       69.9% completed ...
+       79.9% completed ...
+       89.9% completed ...
+       99.9% completed ...
+
+      Lv  0:       4096 patches loaded)
+      Lv  1:        768 patches loaded)
+      Lv  2:        896 patches loaded)
+      Lv  3:         96 patches loaded)
+      Lv  4:         96 patches loaded)
+      Lv  5:          0 patches loaded)
+      Lv  6:          0 patches loaded)
+      Lv  7:          0 patches loaded)
+      Lv  8:          0 patches loaded)
+      Lv  9:          0 patches loaded)
+
+   Loading patches ... done
+   GetMinShellWidth ...
+      Minimum distance = 1.1024082e+02
+      Level            = 2
+      Shell scale      = 1.2800000e+02
+   GetMinShellWidth ... done
+LoadData_HDF5 ... done
+SetMaxRhoPos ... done
+TakeNote ... 
+======================================================================================
+
+Command-line arguments :
+ ./GAMER_ExtractProfile -D -i Data_f -S -r 2.9 -n 128 -x 10 -y 10 -z 10 -p
+
+MODEL            =          ELBDM
+FLOAT8           =             ON
+GAMER_DEBUG      =            OFF
+SUPPORT_HDF5     =             ON
+NCOMP_FLUID      =              3
+NCOMP_PASSIVE    =              0
+DumpID           =              8
+Time             =  2.0000000e+00
+Step             =          10000
+NX0_TOT[0]       =            128
+NX0_TOT[1]       =            128
+NX0_TOT[2]       =            128
+NIn              =              4
+NOut             =              4
+Center_x         =  1.0000139e+01
+Center_y         =  1.0000088e+01
+Center_z         =  1.0000096e+01
+MappedCenter_x   = -9.9998612e+00
+MappedCenter_y   = -9.9999118e+00
+MappedCenter_z   = -9.9999043e+00
+Radius           =  2.9000000e+00
+UseMaxRhoPos     =              8
+UseMaxRhoPos_R   =  2.9000000e+00
+UseMaxRhoPos_Par =              1
+Periodic         =              1
+InputScale       =              0
+LogBin           =  0.0000000e+00
+GetNShell        =  2.0000000e+00
+NShell           =             38
+ShellWidth       =  7.8125000e-02
+RhoThres         = -9.9999900e+05
+OutputPot        =  NO
+OutputParDens    =  1
+OutputCenter     =  NO
+NeedGhost        =  NO
+UseTree          =  NO
+FileName_Tree    =  (null)
+IntScheme        =  CQUAR
+ELBDM_IntPhase   =  YES
+ELBDM_GetVir     =  NO
+ELBDM_ETA        =  8.7605914e+03
+INT_MONO_COEFF   =  2.0000000e+00
+GetAvePot        =  NO
+======================================================================================
+TakeNote ... done
+CheckParameter ... done
+Init_ShellAve ... done
+Evaluating the shell average ...
+   Level 0 ... done
+   Level 1 ... done
+   Level 2 ... done
+   Level 3 ... done
+   Level 4 ... done
+   Level 5 ... done
+   Level 6 ... done
+   Level 7 ... done
+   Level 8 ... done
+   Level 9 ... done
+Evaluating the RMS ...
+   Level 0 ... done
+   Level 1 ... done
+   Level 2 ... done
+   Level 3 ... done
+   Level 4 ... done
+   Level 5 ... done
+   Level 6 ... done
+   Level 7 ... done
+   Level 8 ... done
+   Level 9 ... done
+Output_ShellAve ... done
+Program terminated successfully
+LoadData_HDF5 ...
+   Loading simulation information ...
+      The format version of the HDF5 RESTART file = 2405
+   Loading simulation information ... done
+   Loading corner table ...
+   Loading corner table ... done
+   Loading son table ...
+   Loading son table ... done
+   Loading patches ...
+        0.0% completed ...
+       10.0% completed ...
+       20.0% completed ...
+       30.0% completed ...
+       39.9% completed ...
+       49.9% completed ...
+       59.9% completed ...
+       69.9% completed ...
+       79.9% completed ...
+       89.9% completed ...
+       99.9% completed ...
+
+      Lv  0:       4096 patches loaded)
+      Lv  1:        704 patches loaded)
+      Lv  2:        800 patches loaded)
+      Lv  3:         96 patches loaded)
+      Lv  4:         64 patches loaded)
+      Lv  5:          0 patches loaded)
+      Lv  6:          0 patches loaded)
+      Lv  7:          0 patches loaded)
+      Lv  8:          0 patches loaded)
+      Lv  9:          0 patches loaded)
+
+   Loading patches ... done
+   GetMinShellWidth ...
+      Minimum distance = 1.1085125e+02
+      Level            = 2
+      Shell scale      = 1.2800000e+02
+   GetMinShellWidth ... done
+LoadData_HDF5 ... done
+SetMaxRhoPos ...
+   GOOD : No high density points (> 8.0342151e+02) were found outside the target region
+   ===================================================================================
+   Maximum density:
+   Ranking  Lv  (            x,             y,             z)        Density
+         0   2  (1.0019531e+01, 9.9804688e+00, 9.9804688e+00)  8.8839025e+02
+         1   2  (1.0019531e+01, 9.9804688e+00, 1.0019531e+01)  8.7281216e+02
+         2   2  (1.0058594e+01, 9.9804688e+00, 9.9804688e+00)  8.3409432e+02
+         3   2  (9.9804688e+00, 9.9804688e+00, 1.0019531e+01)  8.2190816e+02
+         4   2  (9.9804688e+00, 9.9804688e+00, 9.9804688e+00)  8.1436651e+02
+         5   2  (1.0019531e+01, 1.0019531e+01, 9.9804688e+00)  8.0489951e+02
+         6   2  (9.9804688e+00, 1.0019531e+01, 1.0019531e+01)  8.0414669e+02
+         7   2  (9.9804688e+00, 1.0019531e+01, 9.9804688e+00)  8.0342151e+02
+
+   New center: (1.0005364e+01, 9.9946524e+00, 9.9951604e+00)
+   ===================================================================================
+LoadData_HDF5 ...
+   Loading simulation information ...
+      The format version of the HDF5 RESTART file = 2405
+   Loading simulation information ... done
+   Loading corner table ...
+   Loading corner table ... done
+   Loading son table ...
+   Loading son table ... done
+   Loading patches ...
+        0.0% completed ...
+       10.0% completed ...
+       20.0% completed ...
+       30.0% completed ...
+       39.9% completed ...
+       49.9% completed ...
+       59.9% completed ...
+       69.9% completed ...
+       79.9% completed ...
+       89.9% completed ...
+       99.9% completed ...
+
+      Lv  0:       4096 patches loaded)
+      Lv  1:        704 patches loaded)
+      Lv  2:        800 patches loaded)
+      Lv  3:         96 patches loaded)
+      Lv  4:         64 patches loaded)
+      Lv  5:          0 patches loaded)
+      Lv  6:          0 patches loaded)
+      Lv  7:          0 patches loaded)
+      Lv  8:          0 patches loaded)
+      Lv  9:          0 patches loaded)
+
+   Loading patches ... done
+   GetMinShellWidth ...
+      Minimum distance = 8.1443222e+01
+      Level            = 2
+      Shell scale      = 1.2800000e+02
+   GetMinShellWidth ... done
+LoadData_HDF5 ... done
+SetMaxRhoPos ... done
+TakeNote ... 
+======================================================================================
+
+Command-line arguments :
+ ./GAMER_ExtractProfile -D -i Data_f -S -r 2.9 -n 128 -x 10 -y 10 -z 10 -p
+
+MODEL            =          ELBDM
+FLOAT8           =             ON
+GAMER_DEBUG      =            OFF
+SUPPORT_HDF5     =             ON
+NCOMP_FLUID      =              3
+NCOMP_PASSIVE    =              0
+DumpID           =              9
+Time             =  2.2500000e+00
+Step             =          11250
+NX0_TOT[0]       =            128
+NX0_TOT[1]       =            128
+NX0_TOT[2]       =            128
+NIn              =              4
+NOut             =              4
+Center_x         =  1.0005364e+01
+Center_y         =  9.9946524e+00
+Center_z         =  9.9951604e+00
+MappedCenter_x   = -9.9946365e+00
+MappedCenter_y   =  2.9994652e+01
+MappedCenter_z   =  2.9995160e+01
+Radius           =  2.9000000e+00
+UseMaxRhoPos     =              8
+UseMaxRhoPos_R   =  2.9000000e+00
+UseMaxRhoPos_Par =              1
+Periodic         =              1
+InputScale       =              0
+LogBin           =  0.0000000e+00
+GetNShell        =  2.0000000e+00
+NShell           =             38
+ShellWidth       =  7.8125000e-02
+RhoThres         = -9.9999900e+05
+OutputPot        =  NO
+OutputParDens    =  1
+OutputCenter     =  NO
+NeedGhost        =  NO
+UseTree          =  NO
+FileName_Tree    =  (null)
+IntScheme        =  CQUAR
+ELBDM_IntPhase   =  YES
+ELBDM_GetVir     =  NO
+ELBDM_ETA        =  8.7605914e+03
+INT_MONO_COEFF   =  2.0000000e+00
+GetAvePot        =  NO
+======================================================================================
+TakeNote ... done
+CheckParameter ... done
+Init_ShellAve ... done
+Evaluating the shell average ...
+   Level 0 ... done
+   Level 1 ... done
+   Level 2 ... done
+   Level 3 ... done
+   Level 4 ... done
+   Level 5 ... done
+   Level 6 ... done
+   Level 7 ... done
+   Level 8 ... done
+   Level 9 ... done
+Evaluating the RMS ...
+   Level 0 ... done
+   Level 1 ... done
+   Level 2 ... done
+   Level 3 ... done
+   Level 4 ... done
+   Level 5 ... done
+   Level 6 ... done
+   Level 7 ... done
+   Level 8 ... done
+   Level 9 ... done
+Output_ShellAve ... done
+Program terminated successfully
