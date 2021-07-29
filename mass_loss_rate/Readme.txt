@@ -1,2 +1,2 @@
 Use Get_attributes.job to get the file Attributes.
-Then put it into this directory and run the mass_loss_estimater
+Then put it into this directory and run main

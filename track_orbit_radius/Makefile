@@ -87,3 +87,4 @@ $(OBJDIR)/%.o: %.cu
 
 clean:
 	rm -f $(OBJDIR)/*.o
+	rm main
