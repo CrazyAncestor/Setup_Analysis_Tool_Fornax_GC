@@ -105,7 +105,7 @@ double GC_orbit_radius(const char* filename){
         #endif
         radius += (pos_final[j]-center_pos[j])*(pos_final[j]-center_pos[j]);
     }
-
+    radius = pow(radius,0.5);
     t = clock()-t;
     #ifdef DEBUG
     cout<<radius<<endl;
@@ -125,7 +125,7 @@ int main(int argc, char *argv[]) {
     file.open("r.txt",ios::out);
     for(int idx=idx_start;idx<idx_end+1;idx++){
 	    char filename[100];
-	    sprintf(filename,"../Attributes_%06d",idx);
+	    sprintf(filename,"Attributes_%06d",idx);
         file<<GC_orbit_radius(filename)<<endl;
     }
     file.close();
