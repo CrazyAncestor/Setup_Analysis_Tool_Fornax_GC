@@ -37,31 +37,48 @@ for i in range(len(filein)):
    def gc_star( pfilter, data ):
       filter = (data[ "all", "particle_mass" ] <7.096752e35)
       return filter
+   def halo_star( pfilter, data ):
+      filter = (data[ "all", "particle_mass" ] >7.096752e35)
+      return filter
    
 
    add_particle_filter( "gc_star", function=gc_star, filtered_type="all", requires=["particle_mass"] )
+   add_particle_filter( "halo_star", function=halo_star, filtered_type="all", requires=["particle_mass"] )
    
    ds.add_particle_filter( "gc_star" )
+   df.add_particle_filter( "halo_star" )
    
 
 
    # get the mass and creation time of the new stars
    ad            = ds.all_data()
-   x = np.array(ad[ "gc_star", "particle_position_x" ].in_units( "kpc" ) )
-   y = np.array(ad[ "gc_star", "particle_position_y" ].in_units( "kpc" ) )
-   z = np.array(ad[ "gc_star", "particle_position_z" ].in_units( "kpc" ) )
-   vx        = np.array(ad[ "gc_star", "particle_velocity_x" ].in_units( "kpc/Gyr" ))*0.47
-   vy        = np.array(ad[ "gc_star", "particle_velocity_y" ].in_units( "kpc/Gyr" ))*0.47
-   vz        = np.array(ad[ "gc_star", "particle_velocity_x" ].in_units( "kpc/Gyr" ))*0.47
+   af            = df.all_data()
+   x_gc = np.array(ad[ "gc_star", "particle_position_x" ].in_units( "kpc" ) )
+   y_gc = np.array(ad[ "gc_star", "particle_position_y" ].in_units( "kpc" ) )
+   z_gc = np.array(ad[ "gc_star", "particle_position_z" ].in_units( "kpc" ) )
+   vx_gc        = np.array(ad[ "gc_star", "particle_velocity_x" ].in_units( "kpc/Gyr" ))*0.47
+   vy_gc        = np.array(ad[ "gc_star", "particle_velocity_y" ].in_units( "kpc/Gyr" ))*0.47
+   vz_gc        = np.array(ad[ "gc_star", "particle_velocity_x" ].in_units( "kpc/Gyr" ))*0.47
+
+   x_halo = np.array(af[ "halo_star", "particle_position_x" ].in_units( "kpc" ) )
+   y_halo = np.array(af[ "halo_star", "particle_position_y" ].in_units( "kpc" ) )
+   z_halo = np.array(af[ "halo_star", "particle_position_z" ].in_units( "kpc" ) )
+   centre_halo = np.array([np.average(af[ "halo_star", "particle_position_x" ].in_units( "kpc" ) ),
+                      np.average(af[ "halo_star", "particle_position_y" ].in_units( "kpc" ) ),
+                      np.average(af[ "halo_star", "particle_position_z" ].in_units( "kpc" ) )])
 
    # write into files
    f = open("Attributes_%06d" %i,"w")
-   
    for j in range(len(x)):
-      f.write(str(x[j])+'\n')
-      f.write(str(y[j])+'\n')
-      f.write(str(z[j])+'\n')
-      f.write(str(vx[j])+'\n')
-      f.write(str(vy[j])+'\n')
-      f.write(str(vz[j])+'\n')
+      f.write(str(x_gc[j])+'\n')
+      f.write(str(y_gc[j])+'\n')
+      f.write(str(z_gc[j])+'\n')
+      f.write(str(vx_gc[j])+'\n')
+      f.write(str(vy_gc[j])+'\n')
+      f.write(str(vz_gc[j])+'\n')
    f.close()
+
+   f_halo = open("Halo_Center_%06d" %i,"w")
+   for j in range(3):
+      f_halo.write(str(centre_halo[j])+'\n')
+   f_halo.close()

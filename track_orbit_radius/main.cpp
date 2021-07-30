@@ -20,7 +20,7 @@ void init_pars(particle GC_particles[],int size,double pos[][3],double vel[][3],
         GC_particles[i].init(pos[i], vel[i]);
     }
 }
-double GC_orbit_radius(const char* filename){
+double GC_orbit_radius(const char* filename,int idx){
     int size = file_size(filename)/6;
     double pos[size][3];
     double vel[size][3];
@@ -90,6 +90,18 @@ double GC_orbit_radius(const char* filename){
         }//for(int j=0;j<cell_num;j++)    
     }//for(int i=0;i<cell_num;i++)
 
+    //get halo center position
+    fstream halo_file;
+    string line;
+    char halo_filename[100];
+	sprintf(halo_filename,"Halo_Center_%06d",idx);
+    halo_file.open(halo_filename,ios::out);
+    for(int j=0;j<3;j++){
+        getline(halo_file,line);
+        center_pos[j] = atof(line.c_str());
+    }
+    halo_file.close();
+
     #ifdef DEBUG
     cout<<arg_max_index[0]<<','<<arg_max_index[1]<<','<<arg_max_index[2]<<endl;
     cout<<max_num<<endl;
@@ -126,7 +138,7 @@ int main(int argc, char *argv[]) {
     for(int idx=idx_start;idx<idx_end+1;idx++){
 	    char filename[100];
 	    sprintf(filename,"Attributes_%06d",idx);
-        file<<GC_orbit_radius(filename)<<endl;
+        file<<GC_orbit_radius(filename,idx)<<endl;
     }
     file.close();
 }//int main()
