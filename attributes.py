@@ -69,7 +69,7 @@ for i in range(len(filein)):
 
    # write into files
    f = open("Attributes_%06d" %i,"w")
-   for j in range(len(x)):
+   for j in range(len(x_gc)):
       f.write(str(x_gc[j])+'\n')
       f.write(str(y_gc[j])+'\n')
       f.write(str(z_gc[j])+'\n')
