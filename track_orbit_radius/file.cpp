@@ -1,7 +1,7 @@
 #include<file.h>
-int file_size() {
+int file_size(const char* filename) {
     fstream file;
-    file.open("Attributes", ios::in);        
+    file.open(filename, ios::in);        
 
     if (!file)     
     {
@@ -19,9 +19,9 @@ int file_size() {
     return id;
 }//FUNCTION: int file_size()
 
-int read_file(int size,double pos[][3],double vel[][3]) {
+int read_file(const char* filename,int size,double pos[][3],double vel[][3]) {
     fstream file;
-    file.open("Attributes", ios::in);  
+    file.open(filename, ios::in);  
 
     if (!file)    
     {
