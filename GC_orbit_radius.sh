@@ -1,11 +1,6 @@
 # $1: start index
 # $2: end index
 
-
-if [ "$PBS_ENVIRONMENT" != "PBS_INTERACTIVE" ]; then
-   cd $PBS_O_WORKDIR
-fi
-
 python attributes.py -s $1 -e $2
 track_orbit_radius/main $1 $2
 

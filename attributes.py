@@ -55,13 +55,13 @@ for i in range(len(filein)):
    vz        = np.array(ad[ "gc_star", "particle_velocity_x" ].in_units( "kpc/Gyr" ))*0.47
 
    # write into files
-   f = open("Attributes_%06d" %i)
+   f = open("Attributes_%06d" %i,"w")
    
-   for i in range(len(x)):
-      f.write(x[i])
-      f.write(y[i])
-      f.write(z[i])
-      f.write(vx[i])
-      f.write(vy[i])
-      f.write(vz[i])
+   for j in range(len(x)):
+      f.write(str(x[j])+'\n')
+      f.write(str(y[j])+'\n')
+      f.write(str(z[j])+'\n')
+      f.write(str(vx[j])+'\n')
+      f.write(str(vy[j])+'\n')
+      f.write(str(vz[j])+'\n')
    f.close()
