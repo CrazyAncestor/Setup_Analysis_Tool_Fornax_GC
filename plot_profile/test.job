@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#PBS -N gamer
+#PBS -M colonist288@gmail.com
+#PBS -m abe
+#PBS -q workq
+#PBS -k n
+#PBS -l walltime=720:00:00
+#PBS -l nodes=2:ppn=16
+##PBS -o stdout
+##PBS -e stderr
+##PBS -W depend=afterok:JOB_ID
+##PBS -W depend=afterany:JOB_ID
+
+array=(400)
+R=5
+Rm=3
+rm log
+if [ "$PBS_ENVIRONMENT" != "PBS_INTERACTIVE" ]; then
+   cd $PBS_O_WORKDIR
+fi
+number=1140
+numbers=$(printf "%06d" $number)
+echo  $numbers  1>>log 2>&1
+
+

@@ -1,0 +1,16 @@
+set terminal gif animate delay 10
+set output 'foobar.gif'
+set title "Comparison of initial and final density profile"
+set xlabel "radius(kpc)"
+set ylabel "density(1e6 Msun/(kpc)^3)"
+set yrange [0.001:100000]
+set logscale xy
+
+do for [i=1:100] {
+    time=i*0.47/16
+    t=sprintf("%.2f",time)
+    plot 'profile_0' using 1:3 with linespoints linewidth 2 title "initial profile" ,'profile_'.i.'' using 1:3 with linespoints linewidth 2 title "t = ".t."Gyr"
+
+}
+
+
