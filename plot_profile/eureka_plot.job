@@ -11,10 +11,8 @@
 ##PBS -e stderr
 ##PBS -W depend=afterok:JOB_ID
 ##PBS -W depend=afterany:JOB_ID
-
-array=(400)
-R=5
-Rm=3
+R=10
+Rm=10
 
 if [ "$PBS_ENVIRONMENT" != "PBS_INTERACTIVE" ]; then
    cd $PBS_O_WORKDIR
@@ -25,7 +23,7 @@ cp ../Data_000000 Data_i
 mv AveParDens AveParDens_init
 
 
-for i in {1..400};
+for i in {0..400};
 do
    DATA=$(printf "../Data_%06d" $i)
    echo $DATA
