@@ -95,7 +95,7 @@ double GC_orbit_radius(const char* filename,int idx){
     string line;
     char halo_filename[100];
 	sprintf(halo_filename,"Halo_Center_%06d",idx);
-    halo_file.open(halo_filename,ios::out);
+    halo_file.open(halo_filename,ios::in);
     for(int j=0;j<3;j++){
         getline(halo_file,line);
         center_pos[j] = atof(line.c_str());
