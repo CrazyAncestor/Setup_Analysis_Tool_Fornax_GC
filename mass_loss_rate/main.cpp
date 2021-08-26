@@ -93,15 +93,4 @@ int main()
 
     //print out mass loss rate
     cout <<"mass loss rate:"<< float((id+0.0)/(size+0.0)) << endl;
-
-    //print GC position
-    double r_all[3];
-    for (int i = 0; i < size; i++) {
-        GC_particles[i].init(pos[i], vel[i]);
-        for (int j = 0; j < 3; j++) {
-            if(!GC_particles[i].kicked)r_all[j] += GC_particles[i].get_position(j)-10.;
-        }//for (int j = 0; j < 3; j++)
-    }//for (int i = 0; i < size; i++)
-    double r_GC = pow(r_all[0] * r_all[0] + r_all[1] * r_all[1] + r_all[2] * r_all[2],0.5)/(size-id) ;
-    cout << r_GC << endl;
 }//int main()
