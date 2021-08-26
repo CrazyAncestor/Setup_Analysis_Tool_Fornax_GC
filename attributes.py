@@ -68,7 +68,7 @@ for i in range(len(filein)):
                       np.average(af[ "halo_star", "particle_position_z" ].in_units( "kpc" ) )])
 
    # write into files
-   f = open("Attributes_%06d" %i,"w")
+   f = open("Attributes_%06d" %(i+idx_start),"w")
    for j in range(len(x_gc)):
       f.write(str(x_gc[j])+'\n')
       f.write(str(y_gc[j])+'\n')
@@ -78,7 +78,7 @@ for i in range(len(filein)):
       f.write(str(vz_gc[j])+'\n')
    f.close()
 
-   f_halo = open("Halo_Center_%06d" %i,"w")
+   f_halo = open("Halo_Center_%06d" %(i+idx_start),"w")
    for j in range(3):
       f_halo.write(str(centre_halo[j])+'\n')
    f_halo.close()
