@@ -33,17 +33,17 @@ def enclosed_mass(r,dens,r_max=-1.):
 
         return 4* np.pi* np.sum(r_avg**2*dr*dens_avg)
 
-center = 0.5
+center = 75.
 r=[]
 dens=[]
 while line:
     line = fp.readline()
     r.append(np.abs(column_value(line,4)-center)*3**0.5)
-    dens.append(column_value(line,7)**0.5)
+    dens.append(column_value(line,7))
 r = np.sort(r)
 dens = -np.sort(-np.array(dens))
 
-rm = 0.3
+rm = 3.0
 
 M = enclosed_mass(r,dens,r_max=rm)
 print('enclosed mass:'+str(M))
