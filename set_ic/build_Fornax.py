@@ -73,19 +73,19 @@ if __name__== '__main__':
     halo_rt = rt
     halo_type = "LC"
 
-    """stellar_rs = 0.668
+    stellar_rs = 0.668
     stellar_mass = 38.2
     stellar_rt = rt
-    #stellar_type = "Plummer
-    """
+    stellar_type = "Plummer"
+    
     rho_halo= getrho(halo_mass,halo_rs,halo_rt,halo_type)
-    #rho_stellar= getrho(stellar_mass,stellar_rs,stellar_rt,stellar_type)
+    rho_stellar= stellar_mass/(4*np.pi/3*stellar_rs**3)#getrho(stellar_mass,stellar_rs,stellar_rt,stellar_type)
 
     print('scaling density:')
     print("DM Halo Density :"+str(rho_halo))
-    #print("Stellar Density :"+str(rho_stellar))
+    print("Stellar Density :"+str(rho_stellar))
 
-    enclosed_mass = clustermass(rho_halo,halo_rs,halo_rt,ri,halo_type)# +clustermass(rho_stellar,stellar_rs,stellar_rt,ri,stellar_type)
+    enclosed_mass = clustermass(rho_halo,halo_rs,halo_rt,ri,halo_type) +clustermass(rho_stellar,stellar_rs,stellar_rt,ri,stellar_type)
     v = (enclosed_mass/ri)**0.5
     theta = np.pi/4.
     rt = 10.
@@ -96,7 +96,7 @@ if __name__== '__main__':
     print("GC x :"+str(ri*np.cos(theta) ))
     print("GC y :"+str(ri*np.sin(theta) ))
     print('intial velocity:')
-    M_GC = 131825/1e6 
+    M_GC = 0.13#/1e6 
     halo_mass =  clustermass(rho_halo,halo_rs,halo_rt,rt,halo_type)
     print("GC Vx :"+str(-v*np.sin(theta) *(halo_mass)/(halo_mass+M_GC)))
     print("GC Vy :"+str( v*np.cos(theta) *(halo_mass)/(halo_mass+M_GC)))
@@ -104,7 +104,7 @@ if __name__== '__main__':
     print("Halo Vy :"+str(-v*np.cos(theta) *(M_GC)/(halo_mass+M_GC)))
 
     r = np.logspace(np.log10(halo_rs/100),np.log10(10),1000)
-    dens = np.array([density(rho_halo,halo_rs,10,r[i],halo_type) for i in range(len(r))])
+    dens = np.array([density(rho_halo,halo_rs,10,r[i],halo_type)+density(rho_stellar,stellar_rs,10,r[i],stellar_type) for i in range(len(r))])
     create_table('profile_Fornax.txt',r,dens)
     print(halo_mass)
 
