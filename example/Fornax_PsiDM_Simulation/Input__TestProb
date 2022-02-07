@@ -1,0 +1,16 @@
+# problem-specific runtime parameters
+Fornax_N                   1        # total number of Fornaxs
+Fornax_RSeed              -1        # random seed for setting the Fornax centra (<0 -> hard coding if Fornax_N>1) [0]
+Fornax_CoreRadiusAll       10.0   # core radius for ALL Fornaxs (in code unit; <=0.0 -> hard coding)
+Fornax_EmptyRegion         0.0      # Fornax-free region [0.0]
+                                     # -> Fornaxs only reside in [Fornax_EmptyRegion : BOX_SIZE-Fornax_EmptyRegion]
+                                     # -> useful only when Fornax_RSeed >= 0
+Fornax_DensProf_Filename   FornaxDensityProfile_Lambda0.0    # filename of the input Fornax density profile
+
+GC_Mass                    10    # Globular cluster's mass (Unit: 1e6 Msun)
+GC_pos_x                   78       # Globular cluster's position's x coordinate (Unit: 0.1kpc)
+GC_pos_y                   75       # Globular cluster's position's y coordinate  (Unit: 0.1kpc)
+GC_pos_z                   75       # Globular cluster's position's z coordinate  (Unit: 0.1kpc)
+GC_vel_x                   0.0       # Globular cluster's velocity's x coordinate (Unit: 0.1kpc/0.0152Gyr)
+GC_vel_y                   2.709520285597251       # Globular cluster's velocity's y coordinate (Unit: 0.1kpc/0.0152Gyr)
+GC_vel_z                   0.0       # Globular cluster's velocity's z coordinate (Unit: 0.1kpc/0.0152Gyr)

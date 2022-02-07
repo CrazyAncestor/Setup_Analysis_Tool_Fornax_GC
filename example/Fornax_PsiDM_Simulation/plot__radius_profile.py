@@ -40,8 +40,9 @@ dpi         = 150
 
 filein  = [ 'Data_%06d'%idx for idx in range(idx_start, idx_end+1) ] 
 
-delta_t = 0.47/4. # Unit: Gyr
-MassThreshold = 1.989e+34 # Unit: g
+delta_t = 0.0152 # Unit: Gyr
+MassThreshold = 0 # Unit: g
+center_pos = 7.5
 
 def GetRadiusAndTime(filein):
 
@@ -53,18 +54,11 @@ def GetRadiusAndTime(filein):
         ds = yt.load( filein[i] )
         df = yt.load( filein[i] )
         def gc_star( pfilter, data ):
-            filter = (data[ "all", "particle_mass" ] <MassThreshold)
-            return filter
-
-        def halo_star( pfilter, data ):
             filter = (data[ "all", "particle_mass" ] >MassThreshold)
             return filter
 
         add_particle_filter( "gc_star", function=gc_star, filtered_type="all", requires=["particle_mass"] )
-        add_particle_filter( "halo_star", function=halo_star, filtered_type="all", requires=["particle_mass"] )
-
         ds.add_particle_filter( "gc_star" )
-        df.add_particle_filter( "halo_star" )
 
         # get the mass and creation time of the new stars
         ad            = ds.all_data()
@@ -75,12 +69,8 @@ def GetRadiusAndTime(filein):
         centre_gc = np.array([np.average(ad[ "gc_star", "particle_position_x" ].in_units( "kpc" ) ),
                             np.average(ad[ "gc_star", "particle_position_y" ].in_units( "kpc" ) ),
                             np.average(ad[ "gc_star", "particle_position_z" ].in_units( "kpc" ) )])
-        x_halo = np.array(af[ "halo_star", "particle_position_x" ].in_units( "kpc" ) )
-        y_halo = np.array(af[ "halo_star", "particle_position_y" ].in_units( "kpc" ) )
-        z_halo = np.array(af[ "halo_star", "particle_position_z" ].in_units( "kpc" ) )
-        centre_halo = np.array([np.average(af[ "halo_star", "particle_position_x" ].in_units( "kpc" ) ),
-                            np.average(af[ "halo_star", "particle_position_y" ].in_units( "kpc" ) ),
-                            np.average(af[ "halo_star", "particle_position_z" ].in_units( "kpc" ) )])
+        
+        centre_halo = np.array([center_pos,center_pos,center_pos])
         radius = np.sum((centre_gc-centre_halo)**2)**0.5
         r.append(radius)
         t.append(delta_t*i)
@@ -94,4 +84,4 @@ plt.xlabel('t (Gyr)')
 plt.ylabel('r (kpc)')
 plt.legend(loc = 'best')
 
-plt.show()
+plt.savefig('r_t.png')
